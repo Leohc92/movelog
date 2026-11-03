@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import tempfile
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -14,6 +15,15 @@ from coros_fit import read_activity
 
 API = "https://teamcnapi.coros.com"
 OUTPUT = Path(__file__).resolve().parents[1] / "src/static/activities.json"
+
+
+class CorosSyncError(RuntimeError):
+    pass
+
+
+def result_code(result):
+    code = str(result.get("result", result.get("code", "unknown")))
+    return code if code.isdigit() and len(code) <= 12 else "unknown"
 
 
 def request_json(path, data=None, headers=None):
@@ -43,9 +53,10 @@ def sync(account, password, output=OUTPUT):
     )
     token = (login.get("data") or {}).get("accessToken")
     if not token:
-        raise RuntimeError(
-            "COROS login failed; check the account, password, and region"
+        raise CorosSyncError(
+            f"COROS login failed (status {result_code(login)}); check the account, password, and region"
         )
+    print("COROS authentication succeeded", flush=True)
     headers = {"accesstoken": token}
     activities = []
     seen_ids = set()
@@ -56,8 +67,8 @@ def sync(account, password, output=OUTPUT):
         )
         data = result.get("data")
         if not isinstance(data, dict) or not isinstance(data.get("dataList"), list):
-            raise RuntimeError(
-                "Unexpected COROS activity list; published data was not changed"
+            raise CorosSyncError(
+                f"Unexpected COROS activity list (status {result_code(result)}); published data was not changed"
             )
         batch = data["dataList"]
         if not batch:
@@ -68,16 +79,17 @@ def sync(account, password, output=OUTPUT):
                 continue
             label_id = str(label_id)
             if label_id in seen_ids:
-                raise RuntimeError(
+                raise CorosSyncError(
                     "COROS returned a repeated page; published data was not changed"
                 )
             seen_ids.add(label_id)
             activities.append(activity)
         page += 1
     if not activities:
-        raise RuntimeError(
+        raise CorosSyncError(
             "COROS returned no activities; existing published data was kept"
         )
+    print(f"Retrieved {len(activities)} COROS activities", flush=True)
     previous = json.loads(output.read_text()) if output.exists() else []
     previous_by_id = {str(a["coros_id"]): a for a in previous if "coros_id" in a}
 
@@ -90,7 +102,7 @@ def sync(account, password, output=OUTPUT):
                 return old
             code = item.get("sportType")
             if code is None:
-                raise RuntimeError(
+                raise CorosSyncError(
                     "An activity has no COROS sport type; import stopped"
                 )
             params = urllib.parse.urlencode(
@@ -102,8 +114,8 @@ def sync(account, password, output=OUTPUT):
             if parsed.scheme != "https" or not (parsed.hostname or "").endswith(
                 ".coros.com"
             ):
-                raise RuntimeError(
-                    "COROS did not return a valid FIT download; import stopped"
+                raise CorosSyncError(
+                    f"COROS did not return a valid FIT download (status {result_code(result)}); import stopped"
                 )
             path = Path(folder) / (label_id + ".fit")
             with urllib.request.urlopen(url, timeout=120) as response:
@@ -136,7 +148,12 @@ if __name__ == "__main__":
         sync(args.account, args.password)
     except Exception as error:
         # Avoid printing credentials, session headers, or download URLs in CI logs.
-        print(
-            f"COROS sync failed ({type(error).__name__}); published data was not changed"
+        detail = (
+            str(error)
+            if isinstance(error, CorosSyncError)
+            else f"HTTP {error.code}"
+            if isinstance(error, urllib.error.HTTPError)
+            else type(error).__name__
         )
+        print(f"COROS sync failed: {detail}; published data was not changed")
         raise SystemExit(1)
