@@ -30,3 +30,5 @@ export const DEFAULT_GOAL: GoalConfig = GOALS.all ?? {
   weekly: 35,
   unit: 'distance',
 }
+
+export const MAPBOX_TOKEN: string = import.meta.env.VITE_MAPBOX_TOKEN || (rawConfig as { mapboxToken?: string }).mapboxToken || ''

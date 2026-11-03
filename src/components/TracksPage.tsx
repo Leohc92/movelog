@@ -8,7 +8,7 @@ import { getAvailableYears, formatDistance, parseMovingTime, formatPace } from '
 import { useLocale } from '../hooks/useLocale'
 import { BrandingBar } from './BrandingBar'
 
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiYmVuLTI5IiwiYSI6ImNrZ3Q4Ym9mMDBqMGYyeXFvODV2dWl6YzQifQ.gSKoWF-fMjhzU67TuDezJQ'
+import { MAPBOX_TOKEN } from '../config'
 
 type SportType = 'Run' | 'Ride' | 'Hike' | 'Swim'
 
@@ -114,7 +114,7 @@ function TrackMap({ activity, activities, dark }: {
 
   // Init map once
   useEffect(() => {
-    if (!mapContainer.current) return
+    if (!MAPBOX_TOKEN || !mapContainer.current) return
     if (map.current) { map.current.setStyle(style); return }
     mapboxgl.accessToken = MAPBOX_TOKEN
     mapReady.current = false
@@ -326,9 +326,11 @@ export function TracksPage({ activities, onBack, onSelectActivity }: TracksPageP
           )}
 
           {/* Map */}
-          <div className="bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl overflow-hidden" style={{ height: 260 }}>
-            <TrackMap activity={selectedActivity} activities={withPolyline} dark />
-          </div>
+          {MAPBOX_TOKEN && (
+            <div className="bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl overflow-hidden" style={{ height: 260 }}>
+              <TrackMap activity={selectedActivity} activities={withPolyline} dark />
+            </div>
+          )}
         </div>
 
         {/* Right: track grid with year filter inside */}

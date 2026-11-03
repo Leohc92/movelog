@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import type { Activity, SportFilter } from '../types'
 import { WORKOUT_TYPES } from '../types'
+import { chinaCities } from '../static/city'
 
 // Canonical province extraction — handles all 3 location_country formats,
 // only returns Chinese provinces (filters out foreign locations).
@@ -26,6 +27,12 @@ export function extractProvince(loc: string | null): string | null {
   ]
   for (const p of provincePatterns) {
     if (loc.includes(p)) return p
+  }
+  // COROS supplies city names such as 常州市 without the province.
+  const city = chinaCities.find((entry) => entry.city && loc.includes(entry.name))
+  if (city) {
+    const province = chinaCities.find((entry) => !entry.city && entry.province === city.province)
+    if (province) return province.name
   }
   // Fuzzy: short names → full names (only fires when no full name matched above)
   const fuzzy: [string, string][] = [

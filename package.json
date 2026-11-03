@@ -1,6 +1,6 @@
 {
-  "name": "workout-dashboard",
-  "description": "Modern workout dashboard with contribution heatmap",
+  "name": "movelog",
+  "description": "动迹 · MoveLog — 记录每一次出发。",
   "version": "3.1.0",
   "author": "Hank Zhao<hxzhenu@gmail.com>",
   "license": "MIT",
@@ -15,7 +15,8 @@
     "preview": "vite preview",
     "data:clean": "rm -f run_page/data.db {GPX,TCX,FIT}_OUT/* activities/* src/static/activities.json",
     "data:download:garmin": "python3 run_page/garmin_sync.py",
-    "data:analysis": "python3 run_page/gen_svg.py --from-db --type github --output assets/github.svg"
+    "data:analysis": "python3 run_page/gen_svg.py --from-db --type github --output assets/github.svg",
+    "data:download:coros": "python3 run_page/coros_sync.py"
   },
   "dependencies": {
     "@mapbox/polyline": "^1.2.1",
@@ -38,5 +39,6 @@
     "tailwindcss": "^4.0.0",
     "typescript": "^5.5.3",
     "vite": "^6.0.0"
-  }
+  },
+  "packageManager": "pnpm@9.14.2"
 }

@@ -1,3 +1,39 @@
+# 动迹 · MoveLog
+
+记录每一次出发。个人跑步、骑行、徒步和健身档案。
+
+- 网站：https://leohc92.github.io/movelog/
+- 仓库：https://github.com/Leohc92/movelog
+- 本地目录：`~/Workspace/movelog`
+
+## 开发与部署
+
+```bash
+pnpm install --frozen-lockfile
+pnpm dev
+PATH_PREFIX=/movelog pnpm build
+```
+
+推送 `master` 后由 GitHub Actions 部署。仓库 Settings → Pages 的 Source 应设为 GitHub Actions。
+
+## COROS 数据
+
+首次数据通过已连接的 COROS 导入。连接器每天最多导出 50 个 FIT 文件；尚未取得 FIT 的活动只显示概要，不生成或猜测轨迹。更早活动的轨迹可通过完整同步补齐。
+
+配置每日自动同步：在仓库 Settings → Secrets and variables → Actions 中添加 Secrets `COROS_ACCOUNT`（登录邮箱）和 `COROS_PASSWORD`（登录密码），再设置 Variable `COROS_SYNC_ENABLED=true`。首次启用后可在 Actions → Run Data Sync 手动运行。此脚本使用 COROS 中国区接口，每天北京时间 08:00 同步并重新部署。
+
+这里只向仓库提交 `src/static/activities.json`，原始 FIT 和 SQLite 数据库均忽略。已选择公开运动地点、GPS 轨迹及心率；发布的 JSON 文件可以被所有人访问。账号密码只放在 GitHub Secrets。
+
+轨迹墙的 SVG 缩略图无需地图服务。交互底图需配置你自己的 Mapbox public token：本地 `.env.local` 中设置 `VITE_MAPBOX_TOKEN`；GitHub Actions 使用同名 Repository Variable。未配置时不显示底图。
+
+`config.yml` 可调整语言、主题和运动目标；现有目标是模板默认值，按个人计划修改。
+
+## 来源
+
+基于 [zhaohongxuan/workouts](https://github.com/zhaohongxuan/workouts)，保留 MIT 许可证及原项目说明。
+
+---
+
 # Workout Log
 
 基于 React + TypeScript + Tailwind CSS 构建的现代运动数据看板，支持跑步、骑行、徒步、健身等多种运动类型的可视化展示。

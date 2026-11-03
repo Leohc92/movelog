@@ -254,7 +254,7 @@ export function ProfileCard({ activities, filter = 'all' }: ProfileCardProps) {
                 <button
                   onClick={() => void triggerSync()}
                   disabled={runStatus === 'triggering' || runStatus === 'queued' || runStatus === 'in_progress'}
-                  title={locale === 'zh' ? '触发 Strava 同步' : 'Trigger Strava sync'}
+                  title={locale === 'zh' ? '触发 COROS 同步' : 'Trigger COROS sync'}
                   className="flex items-center gap-1 text-xs text-[var(--color-muted)] hover:text-[var(--color-accent)] disabled:opacity-40 transition-colors"
                 >
                   <RefreshCw className={`w-3.5 h-3.5 ${runStatus === 'in_progress' || runStatus === 'triggering' ? 'animate-spin' : ''}`} />

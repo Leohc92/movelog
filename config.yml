@@ -5,10 +5,10 @@
 
 # 默认语言：zh（中文）| en（英文）
 # 用户手动切换后会保存到 localStorage，下次访问以用户选择为准
-locale: en
+locale: zh
 
 # 默认主题：system（跟随系统）| light（浅色）| dark（深色）
-theme: dark
+theme: system
 
 # ── 运动目标 ──────────────────────────────────────────────────────────────────
 # unit: distance → 单位 km
@@ -55,8 +55,12 @@ goals:
 # GitHub OAuth App 的 Client ID（Device Flow 不需要 client_secret，client_id 可公开）
 # 注册地址：https://github.com/settings/applications/new
 # Authorization callback URL 填写你的站点域名即可（Device Flow 不实际使用 callback）
-githubClientId: 'Ov23liIA4gcZ3hXZkJnP'
+githubClientId: ''
 
 # 打卡数据存储位置（当前 repo），格式：username/repo-name
-repoOwner: 'zhaohongxuan'
-repoName: 'workouts'
+repoOwner: 'Leohc92'
+repoName: 'movelog'
+
+# 地图使用自己的 Mapbox public token，也可通过 VITE_MAPBOX_TOKEN 配置
+mapboxToken: ''
+syncSource: COROS

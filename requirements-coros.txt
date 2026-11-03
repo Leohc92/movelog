@@ -1,0 +1,2 @@
+garmin-fit-sdk==21.218.0
+polyline==2.0.4

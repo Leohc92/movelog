@@ -4,8 +4,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import * as polyline from '@mapbox/polyline'
 import type { Activity } from '../types'
 
-const MAPBOX_TOKEN =
-  'pk.eyJ1IjoiYmVuLTI5IiwiYSI6ImNrZ3Q4Ym9mMDBqMGYyeXFvODV2dWl6YzQifQ.gSKoWF-fMjhzU67TuDezJQ'
+import { MAPBOX_TOKEN } from '../config'
 
 interface RouteMapProps {
   activities: Activity[]
@@ -23,7 +22,7 @@ export function RouteMap({ activities, selectedActivity, dark, onClearSelection 
     : 'mapbox://styles/mapbox/light-v11'
 
   useEffect(() => {
-    if (!mapContainer.current) return
+    if (!MAPBOX_TOKEN || !mapContainer.current) return
 
     if (map.current) {
       map.current.setStyle(style)
@@ -170,6 +169,8 @@ export function RouteMap({ activities, selectedActivity, dark, onClearSelection 
 
     map.current.fitBounds(bounds, { padding: 30, maxZoom: 13 })
   }
+
+  if (!MAPBOX_TOKEN) return null
 
   return (
     <div className="bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl overflow-hidden h-[280px] relative">

@@ -21,3 +21,16 @@ _site/
 config.yaml
 .venv/
 .pdm-python
+
+# Local secrets, generated files, and original activity exports
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+run_page/data.db
+FIT_OUT/
+GPX_OUT/
+TCX_OUT/
+activities/
+imported.json
+synced_activity.json

@@ -148,21 +148,21 @@ export function Header({ filter, setFilter, dark, toggleTheme, activities, page,
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/70 backdrop-blur-md">
-      <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-4 flex flex-wrap items-center justify-between gap-3">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <span className="text-xl font-bold text-[var(--color-text)]">
-            WORKOUT<span className="text-[var(--color-run)]">.</span>LOG
+            MOVE<span className="text-[var(--color-run)]">.</span>LOG
           </span>
         </div>
 
         {/* Sport filter tabs */}
-        <div className="flex items-center gap-1">
+        <div className="order-3 flex w-full items-center gap-1 overflow-x-auto sm:order-none sm:w-auto">
           {tabs.map((tab) => (
             <button
               key={tab.value}
               onClick={() => { setFilter(tab.value); if (page === 'checkin') onNavigate('home') }}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
+              className={`shrink-0 whitespace-nowrap px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
                 filter === tab.value && page === 'home'
                   ? 'bg-[var(--color-accent)] text-white'
                   : 'text-[var(--color-muted)] hover:text-[var(--color-text)]'
@@ -174,7 +174,7 @@ export function Header({ filter, setFilter, dark, toggleTheme, activities, page,
         </div>
 
         {/* Right nav */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
           {/* Page nav */}
           {navItems.map((item) => (
             <span

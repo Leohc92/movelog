@@ -29,3 +29,27 @@ jobs:
 
       - name: Check formatting (black)
         run: black . --diff --color && black . --check
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+        env:
+          PATH_PREFIX: /${{ github.event.repository.name }}
+
+  coros:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements-coros.txt
+      - run: PYTHONPATH=run_page python -m unittest test_coros_sync -v

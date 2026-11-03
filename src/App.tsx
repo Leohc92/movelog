@@ -111,9 +111,9 @@ export default function App() {
 
       <footer className="text-center py-6 text-sm text-[var(--color-muted)] border-t border-[var(--color-border)]">
           <div className="flex items-center justify-center gap-3">
-            <span>&copy; {new Date().getFullYear()} Workout Dashboard.</span>
+            <span>&copy; {new Date().getFullYear()} 动迹 · MoveLog.</span>
             <a
-              href="https://github.com/zhaohongxuan/workouts"
+              href="https://github.com/Leohc92/movelog"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 hover:text-[var(--color-text)] transition-colors"
