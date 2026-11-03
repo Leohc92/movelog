@@ -66,11 +66,14 @@ def sync(account, password, output=OUTPUT):
             f"/activity/query?modeList=&pageNumber={page}&size=20", headers=headers
         )
         data = result.get("data")
-        if not isinstance(data, dict) or not isinstance(data.get("dataList"), list):
+        batch = data.get("dataList") if isinstance(data, dict) else None
+        # COROS can return null rather than [] after the final page.
+        if batch is None and activities and result_code(result) == "0000":
+            break
+        if not isinstance(batch, list):
             raise CorosSyncError(
-                f"Unexpected COROS activity list (status {result_code(result)}); published data was not changed"
+                f"Unexpected COROS activity list on page {page} after {len(activities)} records (status {result_code(result)})"
             )
-        batch = data["dataList"]
         if not batch:
             break
         for activity in batch:

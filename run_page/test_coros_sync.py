@@ -65,6 +65,39 @@ class CorosSyncTests(unittest.TestCase):
         self.assertEqual(parse.call_args.args[2], 902)
         self.assertEqual(json.loads(self.output.read_text()), [activity])
 
+    def test_null_terminal_page_is_a_successful_end_of_pagination(self):
+        old = {
+            "coros_id": "old",
+            "coros_fit_imported": True,
+            "start_date": "2025-01-01T00:00:00Z",
+        }
+        self.output.write_text(json.dumps([old]))
+        responses = [
+            {"data": {"accessToken": "test-token"}},
+            {
+                "result": "0000",
+                "data": {"dataList": [{"labelId": "old", "sportType": 100}]},
+            },
+            {"result": "0000", "data": {"dataList": None}},
+        ]
+        with patch.object(coros_sync, "request_json", side_effect=responses):
+            coros_sync.sync("test", "test", self.output)
+        self.assertEqual(json.loads(self.output.read_text()), [old])
+
+    def test_api_error_after_a_valid_page_does_not_publish_a_partial_list(self):
+        responses = [
+            {"data": {"accessToken": "test-token"}},
+            {
+                "result": "0000",
+                "data": {"dataList": [{"labelId": "new", "sportType": 100}]},
+            },
+            {"result": "1001", "data": None},
+        ]
+        with patch.object(coros_sync, "request_json", side_effect=responses):
+            with self.assertRaises(coros_sync.CorosSyncError):
+                coros_sync.sync("test", "test", self.output)
+        self.assertEqual(self.output.read_bytes(), self.before)
+
     def test_already_imported_activities_do_not_download_again(self):
         old = {
             "coros_id": "old",
