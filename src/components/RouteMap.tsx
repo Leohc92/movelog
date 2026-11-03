@@ -5,6 +5,7 @@ import * as polyline from '@mapbox/polyline'
 import type { Activity } from '../types'
 
 import { MAPBOX_TOKEN } from '../config'
+import { getRouteBounds } from '../utils/routeGeometry'
 
 interface RouteMapProps {
   activities: Activity[]
@@ -143,31 +144,8 @@ export function RouteMap({ activities, selectedActivity, dark, onClearSelection 
       },
     })
 
-    // Fit bounds to majority of routes (ignore outliers)
-    // Use median-based approach: find the region where most routes are
-    const allCoords: [number, number][] = []
-    for (const f of features) {
-      // Use first coord of each route as representative point
-      if (f.geometry.coordinates.length > 0) {
-        allCoords.push(f.geometry.coordinates[0] as [number, number])
-      }
-    }
-
-    if (allCoords.length === 0) return
-
-    // Sort by lng and lat, take the middle 80% to exclude outliers
-    const trimPct = 0.1
-    const trimCount = Math.floor(allCoords.length * trimPct)
-
-    const lngs = allCoords.map(c => c[0]).sort((a, b) => a - b)
-    const lats = allCoords.map(c => c[1]).sort((a, b) => a - b)
-
-    const bounds = new mapboxgl.LngLatBounds(
-      [lngs[trimCount], lats[trimCount]],
-      [lngs[lngs.length - 1 - trimCount], lats[lats.length - 1 - trimCount]]
-    )
-
-    map.current.fitBounds(bounds, { padding: 30, maxZoom: 13 })
+    const bounds = getRouteBounds(features.map(feature => feature.geometry.coordinates))
+    if (bounds) map.current.fitBounds(bounds, { padding: 30, maxZoom: 13 })
   }
 
   if (!MAPBOX_TOKEN) return null

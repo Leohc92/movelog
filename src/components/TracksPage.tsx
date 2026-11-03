@@ -9,6 +9,7 @@ import { useLocale } from '../hooks/useLocale'
 import { BrandingBar } from './BrandingBar'
 
 import { MAPBOX_TOKEN } from '../config'
+import { getRouteBounds, renderTrackSVG } from '../utils/routeGeometry'
 
 type SportType = 'Run' | 'Ride' | 'Hike' | 'Swim'
 
@@ -17,27 +18,6 @@ interface TracksPageProps {
   filter: string
   onBack: () => void
   onSelectActivity?: (a: Activity | null) => void
-}
-
-function renderTrackSVG(summaryPolyline: string, size = 80): string {
-  try {
-    const coords = polyline.decode(summaryPolyline)
-    if (coords.length < 2) return ''
-    const lats = coords.map(c => c[0])
-    const lngs = coords.map(c => c[1])
-    const minLat = Math.min(...lats), maxLat = Math.max(...lats)
-    const minLng = Math.min(...lngs), maxLng = Math.max(...lngs)
-    const latRange = maxLat - minLat || 0.001
-    const lngRange = maxLng - minLng || 0.001
-    const scale = Math.min((size - 8) / lngRange, (size - 8) / latRange)
-    const offsetX = (size - lngRange * scale) / 2
-    const offsetY = (size - latRange * scale) / 2
-    return coords.map(([lat, lng]) => {
-      const x = (lng - minLng) * scale + offsetX
-      const y = size - ((lat - minLat) * scale + offsetY)
-      return `${x.toFixed(1)},${y.toFixed(1)}`
-    }).join(' ')
-  } catch { return '' }
 }
 
 function TrackThumb({ activity, color, selected, onClick }: {
@@ -104,12 +84,8 @@ function TrackMap({ activity, activities, dark }: {
       'line-color': ['match', ['get', 'type'], 'Run', '#f97316', 'Ride', '#3b82f6', 'Hike', '#22c55e', 'Swim', '#06b6d4', '#a855f7'],
       'line-width': 1.2, 'line-opacity': 0.5,
     }})
-    const allCoords = features.flatMap(f => f.geometry.coordinates as [number, number][])
-    if (!allCoords.length) return
-    const lngs = allCoords.map(c => c[0]).sort((a, b) => a - b)
-    const lats = allCoords.map(c => c[1]).sort((a, b) => a - b)
-    const t = Math.floor(lngs.length * 0.1)
-    m.fitBounds(new mapboxgl.LngLatBounds([lngs[t], lats[t]], [lngs[lngs.length - 1 - t], lats[lats.length - 1 - t]]), { padding: 30, maxZoom: 13 })
+    const bounds = getRouteBounds(features.map(feature => feature.geometry.coordinates))
+    if (bounds) m.fitBounds(bounds, { padding: 30, maxZoom: 13 })
   })
 
   // Init map once
