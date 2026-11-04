@@ -12,6 +12,7 @@ import urllib.parse
 import urllib.request
 
 from coros_fit import read_activity
+from coros_geography import enrich_activity
 
 API = "https://teamcnapi.coros.com"
 OUTPUT = Path(__file__).resolve().parents[1] / "src/static/activities.json"
@@ -133,6 +134,7 @@ def sync(account, password, output=OUTPUT):
 
         with ThreadPoolExecutor(max_workers=4) as pool:
             exported = list(pool.map(import_activity, activities))
+    exported = [enrich_activity(activity) for activity in exported]
     exported.sort(key=lambda a: a["start_date"], reverse=True)
     temporary = output.with_suffix(".json.tmp")
     temporary.write_text(json.dumps(exported, ensure_ascii=False, indent=2) + "\n")

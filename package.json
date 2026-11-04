@@ -17,7 +17,7 @@
     "data:download:garmin": "python3 run_page/garmin_sync.py",
     "data:analysis": "python3 run_page/gen_svg.py --from-db --type github --output assets/github.svg",
     "data:download:coros": "python3 run_page/coros_sync.py",
-    "test:routes": "node --experimental-strip-types --test tests/routeGeometry.test.mjs"
+    "test:routes": "node --experimental-strip-types --test tests/*.test.mjs"
   },
   "dependencies": {
     "@mapbox/polyline": "^1.2.1",

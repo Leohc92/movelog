@@ -63,7 +63,9 @@ class CorosSyncTests(unittest.TestCase):
                     coros_sync.sync("test", "test", self.output)
         self.assertIn("sportType=902", request.call_args_list[-1].args[0])
         self.assertEqual(parse.call_args.args[2], 902)
-        self.assertEqual(json.loads(self.output.read_text()), [activity])
+        self.assertEqual(
+            json.loads(self.output.read_text()), [dict(activity, country_codes=[])]
+        )
 
     def test_null_terminal_page_is_a_successful_end_of_pagination(self):
         old = {
@@ -82,7 +84,9 @@ class CorosSyncTests(unittest.TestCase):
         ]
         with patch.object(coros_sync, "request_json", side_effect=responses):
             coros_sync.sync("test", "test", self.output)
-        self.assertEqual(json.loads(self.output.read_text()), [old])
+        self.assertEqual(
+            json.loads(self.output.read_text()), [dict(old, country_codes=[])]
+        )
 
     def test_api_error_after_a_valid_page_does_not_publish_a_partial_list(self):
         responses = [
@@ -114,7 +118,9 @@ class CorosSyncTests(unittest.TestCase):
             with patch.object(coros_sync.urllib.request, "urlopen") as download:
                 coros_sync.sync("test", "test", self.output)
         download.assert_not_called()
-        self.assertEqual(json.loads(self.output.read_text()), [old])
+        self.assertEqual(
+            json.loads(self.output.read_text()), [dict(old, country_codes=[])]
+        )
 
 
 if __name__ == "__main__":

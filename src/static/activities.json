@@ -15,7 +15,10 @@
     "average_speed": 2.528,
     "elevation_gain": 32,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1792921505,
@@ -33,7 +36,10 @@
     "average_speed": 2.339,
     "elevation_gain": 52,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1792583946,
@@ -51,7 +57,8 @@
     "average_speed": 1.127,
     "elevation_gain": 314,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1792417924,
@@ -69,7 +76,8 @@
     "average_speed": 1.227,
     "elevation_gain": 348,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1792319837,
@@ -87,7 +95,10 @@
     "average_speed": 2.402,
     "elevation_gain": 38,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1792151841,
@@ -105,7 +116,10 @@
     "average_speed": 3.1,
     "elevation_gain": 18,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1791979536,
@@ -123,7 +137,10 @@
     "average_speed": 2.452,
     "elevation_gain": 32,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1791899154,
@@ -141,7 +158,8 @@
     "average_speed": 0.0,
     "elevation_gain": 120,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1791633110,
@@ -159,7 +177,10 @@
     "average_speed": 2.25,
     "elevation_gain": 6,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1791359868,
@@ -177,7 +198,10 @@
     "average_speed": 2.332,
     "elevation_gain": 14,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1791173476,
@@ -195,7 +219,10 @@
     "average_speed": 0.75,
     "elevation_gain": 76,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1791100150,
@@ -213,7 +240,10 @@
     "average_speed": 0.625,
     "elevation_gain": 53,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1791098888,
@@ -231,7 +261,10 @@
     "average_speed": 0.786,
     "elevation_gain": 13,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1790682009,
@@ -249,7 +282,10 @@
     "average_speed": 3.314,
     "elevation_gain": 18,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1790501917,
@@ -267,7 +303,10 @@
     "average_speed": 2.05,
     "elevation_gain": 4,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1789907054,
@@ -285,7 +324,10 @@
     "average_speed": 2.225,
     "elevation_gain": 2,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1789293536,
@@ -303,7 +345,10 @@
     "average_speed": 4.353,
     "elevation_gain": 87,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1788954826,
@@ -321,7 +366,10 @@
     "average_speed": 2.417,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1788690720,
@@ -339,7 +387,10 @@
     "average_speed": 2.125,
     "elevation_gain": 49,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1788523702,
@@ -357,7 +408,10 @@
     "average_speed": 2.411,
     "elevation_gain": 3,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1788079006,
@@ -375,7 +429,10 @@
     "average_speed": 4.683,
     "elevation_gain": 56,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1787748400,
@@ -393,7 +450,10 @@
     "average_speed": 4.675,
     "elevation_gain": 33,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1787744270,
@@ -411,7 +471,10 @@
     "average_speed": 2.092,
     "elevation_gain": 19,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1787399970,
@@ -429,7 +492,10 @@
     "average_speed": 1.717,
     "elevation_gain": 154,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1787142404,
@@ -447,7 +513,10 @@
     "average_speed": 2.159,
     "elevation_gain": 30,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1785561565,
@@ -465,7 +534,10 @@
     "average_speed": 2.078,
     "elevation_gain": 14,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CH"
+    ]
   },
   {
     "run_id": 1785399175,
@@ -483,7 +555,10 @@
     "average_speed": 0.65,
     "elevation_gain": 290,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CH"
+    ]
   },
   {
     "run_id": 1784532066,
@@ -501,7 +576,12 @@
     "average_speed": 0.672,
     "elevation_gain": 10466,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CH",
+      "FR",
+      "IT"
+    ]
   },
   {
     "run_id": 1781771491,
@@ -519,7 +599,10 @@
     "average_speed": 0.726,
     "elevation_gain": 2364,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1780487969,
@@ -537,7 +620,10 @@
     "average_speed": 2.11,
     "elevation_gain": 11,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1778899344,
@@ -555,7 +641,10 @@
     "average_speed": 0.9,
     "elevation_gain": 1045,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1778069825,
@@ -573,7 +662,10 @@
     "average_speed": 2.407,
     "elevation_gain": 39,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1777936555,
@@ -591,7 +683,10 @@
     "average_speed": 1.7,
     "elevation_gain": 437,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1777890490,
@@ -609,7 +704,8 @@
     "average_speed": 1.155,
     "elevation_gain": 469,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1777720925,
@@ -627,7 +723,8 @@
     "average_speed": 1.186,
     "elevation_gain": 338,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1777072644,
@@ -645,7 +742,10 @@
     "average_speed": 1.824,
     "elevation_gain": 416,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1775950098,
@@ -663,7 +763,10 @@
     "average_speed": 2.809,
     "elevation_gain": 51,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1775649511,
@@ -681,7 +784,10 @@
     "average_speed": 2.491,
     "elevation_gain": 4,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1775479495,
@@ -699,7 +805,8 @@
     "average_speed": 1.259,
     "elevation_gain": 511,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1775045500,
@@ -717,7 +824,10 @@
     "average_speed": 2.251,
     "elevation_gain": 29,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1774659608,
@@ -735,7 +845,10 @@
     "average_speed": 1.235,
     "elevation_gain": 2059,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1773440254,
@@ -753,7 +866,10 @@
     "average_speed": 1.145,
     "elevation_gain": 2847,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1773232034,
@@ -771,7 +887,10 @@
     "average_speed": 2.194,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1772954774,
@@ -789,7 +908,10 @@
     "average_speed": 2.335,
     "elevation_gain": 90,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1772800795,
@@ -807,7 +929,8 @@
     "average_speed": 1.309,
     "elevation_gain": 472,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1772627434,
@@ -825,7 +948,10 @@
     "average_speed": 2.281,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1772540726,
@@ -843,7 +969,10 @@
     "average_speed": 2.201,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1772459287,
@@ -861,7 +990,8 @@
     "average_speed": 1.254,
     "elevation_gain": 345,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1771816628,
@@ -879,7 +1009,10 @@
     "average_speed": 1.347,
     "elevation_gain": 82,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1770449411,
@@ -897,7 +1030,10 @@
     "average_speed": 2.358,
     "elevation_gain": 34,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1770208172,
@@ -915,7 +1051,8 @@
     "average_speed": 1.27,
     "elevation_gain": 349,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1769604740,
@@ -933,7 +1070,8 @@
     "average_speed": 1.219,
     "elevation_gain": 329,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1769604018,
@@ -951,7 +1089,8 @@
     "average_speed": 0.0,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1769430139,
@@ -969,7 +1108,8 @@
     "average_speed": 1.148,
     "elevation_gain": 295,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1769256720,
@@ -987,7 +1127,8 @@
     "average_speed": 1.131,
     "elevation_gain": 413,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1769255702,
@@ -1005,7 +1146,8 @@
     "average_speed": 0.0,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1769141413,
@@ -1023,7 +1165,8 @@
     "average_speed": 0.908,
     "elevation_gain": 103,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1769084861,
@@ -1041,7 +1184,8 @@
     "average_speed": 0.914,
     "elevation_gain": 55,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1769002354,
@@ -1059,7 +1203,8 @@
     "average_speed": 1.138,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1768735753,
@@ -1077,7 +1222,10 @@
     "average_speed": 2.477,
     "elevation_gain": 57,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1768651398,
@@ -1095,7 +1243,8 @@
     "average_speed": 1.087,
     "elevation_gain": 435,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1768565109,
@@ -1113,7 +1262,10 @@
     "average_speed": 2.318,
     "elevation_gain": 2,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1767248649,
@@ -1131,7 +1283,10 @@
     "average_speed": 0.906,
     "elevation_gain": 3363,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1767154589,
@@ -1149,7 +1304,8 @@
     "average_speed": 0.764,
     "elevation_gain": 138,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1767016173,
@@ -1167,7 +1323,8 @@
     "average_speed": 1.361,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1766840051,
@@ -1185,7 +1342,8 @@
     "average_speed": 1.25,
     "elevation_gain": 511,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1766838836,
@@ -1203,7 +1361,8 @@
     "average_speed": 0.0,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1766584502,
@@ -1221,7 +1380,8 @@
     "average_speed": 1.35,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1766284190,
@@ -1239,7 +1399,10 @@
     "average_speed": 2.48,
     "elevation_gain": 11,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1764981042,
@@ -1257,7 +1420,10 @@
     "average_speed": 1.12,
     "elevation_gain": 2539,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "TH"
+    ]
   },
   {
     "run_id": 1764502498,
@@ -1275,7 +1441,10 @@
     "average_speed": 2.178,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1764384040,
@@ -1293,7 +1462,10 @@
     "average_speed": 2.077,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1763859641,
@@ -1311,7 +1483,10 @@
     "average_speed": 2.589,
     "elevation_gain": 46,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1763291683,
@@ -1329,7 +1504,10 @@
     "average_speed": 2.507,
     "elevation_gain": 64,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1762951227,
@@ -1347,7 +1525,10 @@
     "average_speed": 2.613,
     "elevation_gain": 7,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1762639230,
@@ -1365,7 +1546,10 @@
     "average_speed": 1.142,
     "elevation_gain": 1503,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1762344926,
@@ -1383,7 +1567,10 @@
     "average_speed": 2.299,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1761661637,
@@ -1401,7 +1588,8 @@
     "average_speed": 0.0,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1761440254,
@@ -1419,7 +1607,10 @@
     "average_speed": 2.437,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1760827234,
@@ -1437,7 +1628,10 @@
     "average_speed": 0.711,
     "elevation_gain": 1163,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "KR"
+    ]
   },
   {
     "run_id": 1760749312,
@@ -1455,7 +1649,10 @@
     "average_speed": 1.573,
     "elevation_gain": 582,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "KR"
+    ]
   },
   {
     "run_id": 1760530157,
@@ -1473,7 +1670,10 @@
     "average_speed": 1.846,
     "elevation_gain": 173,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1760098809,
@@ -1491,7 +1691,10 @@
     "average_speed": 2.384,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1759627392,
@@ -1509,7 +1712,10 @@
     "average_speed": 2.185,
     "elevation_gain": 13,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1759541073,
@@ -1527,7 +1733,10 @@
     "average_speed": 0.614,
     "elevation_gain": 856,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1759450110,
@@ -1545,7 +1754,10 @@
     "average_speed": 2.144,
     "elevation_gain": 57,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1759367439,
@@ -1563,7 +1775,10 @@
     "average_speed": 0.801,
     "elevation_gain": 1934,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1758346194,
@@ -1581,7 +1796,10 @@
     "average_speed": 1.258,
     "elevation_gain": 1288,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1757246057,
@@ -1599,7 +1817,10 @@
     "average_speed": 2.022,
     "elevation_gain": 108,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1756905206,
@@ -1617,7 +1838,10 @@
     "average_speed": 4.842,
     "elevation_gain": 53,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1756524510,
@@ -1635,7 +1859,10 @@
     "average_speed": 0.744,
     "elevation_gain": 47,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "JP"
+    ]
   },
   {
     "run_id": 1756427696,
@@ -1653,7 +1880,10 @@
     "average_speed": 0.436,
     "elevation_gain": 2068,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "JP"
+    ]
   },
   {
     "run_id": 1755904907,
@@ -1671,7 +1901,10 @@
     "average_speed": 0.921,
     "elevation_gain": 610,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1755786740,
@@ -1689,7 +1922,10 @@
     "average_speed": 5.331,
     "elevation_gain": 48,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1755087178,
@@ -1707,7 +1943,10 @@
     "average_speed": 2.396,
     "elevation_gain": 2,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1754827423,
@@ -1725,7 +1964,10 @@
     "average_speed": 4.522,
     "elevation_gain": 58,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1754740378,
@@ -1743,7 +1985,10 @@
     "average_speed": 2.272,
     "elevation_gain": 32,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1754481774,
@@ -1761,7 +2006,10 @@
     "average_speed": 2.174,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1754317848,
@@ -1779,7 +2027,10 @@
     "average_speed": 2.475,
     "elevation_gain": 3,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1754183521,
@@ -1797,7 +2048,10 @@
     "average_speed": 0.9,
     "elevation_gain": 470,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1753276874,
@@ -1815,7 +2069,10 @@
     "average_speed": 2.406,
     "elevation_gain": 38,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1753194897,
@@ -1833,7 +2090,10 @@
     "average_speed": 2.567,
     "elevation_gain": 4,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1753109099,
@@ -1851,7 +2111,10 @@
     "average_speed": 2.467,
     "elevation_gain": 6,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1753015331,
@@ -1869,7 +2132,10 @@
     "average_speed": 1.961,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1752925242,
@@ -1887,7 +2153,10 @@
     "average_speed": 2.047,
     "elevation_gain": 14,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1752590229,
@@ -1905,7 +2174,10 @@
     "average_speed": 2.055,
     "elevation_gain": 6,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1752408916,
@@ -1923,7 +2195,10 @@
     "average_speed": 2.066,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1751113831,
@@ -1941,7 +2216,10 @@
     "average_speed": 1.899,
     "elevation_gain": 2,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1750775647,
@@ -1959,7 +2237,8 @@
     "average_speed": 0.0,
     "elevation_gain": 89,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1748847608,
@@ -1977,7 +2256,10 @@
     "average_speed": 1.434,
     "elevation_gain": 5,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1748131240,
@@ -1995,7 +2277,10 @@
     "average_speed": 2.548,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1747524664,
@@ -2013,7 +2298,10 @@
     "average_speed": 1.453,
     "elevation_gain": 1398,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1746938021,
@@ -2031,7 +2319,10 @@
     "average_speed": 0.83,
     "elevation_gain": 815,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1746839307,
@@ -2049,7 +2340,10 @@
     "average_speed": 2.1,
     "elevation_gain": 2,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1746836864,
@@ -2067,7 +2361,10 @@
     "average_speed": 2.366,
     "elevation_gain": 2,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1746790629,
@@ -2085,7 +2382,10 @@
     "average_speed": 2.263,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1746620591,
@@ -2103,7 +2403,10 @@
     "average_speed": 2.731,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1746318867,
@@ -2121,7 +2424,10 @@
     "average_speed": 2.808,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1746054662,
@@ -2139,7 +2445,10 @@
     "average_speed": 2.464,
     "elevation_gain": 29,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "JP"
+    ]
   },
   {
     "run_id": 1746053376,
@@ -2157,7 +2466,10 @@
     "average_speed": 2.022,
     "elevation_gain": 2,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "JP"
+    ]
   },
   {
     "run_id": 1745892590,
@@ -2175,7 +2487,10 @@
     "average_speed": 0.897,
     "elevation_gain": 578,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "JP"
+    ]
   },
   {
     "run_id": 1745630994,
@@ -2193,7 +2508,10 @@
     "average_speed": 0.927,
     "elevation_gain": 1723,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1745332994,
@@ -2211,7 +2529,8 @@
     "average_speed": 0.0,
     "elevation_gain": 120,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1745245861,
@@ -2229,7 +2548,8 @@
     "average_speed": 0.0,
     "elevation_gain": 223,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1745019069,
@@ -2247,7 +2567,10 @@
     "average_speed": 2.221,
     "elevation_gain": 76,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1744981142,
@@ -2265,7 +2588,10 @@
     "average_speed": 2.347,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1744900325,
@@ -2283,7 +2609,8 @@
     "average_speed": 0.0,
     "elevation_gain": 154,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1744813920,
@@ -2301,7 +2628,8 @@
     "average_speed": 0.0,
     "elevation_gain": 122,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1744513404,
@@ -2319,7 +2647,10 @@
     "average_speed": 2.192,
     "elevation_gain": 15,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1744239869,
@@ -2337,7 +2668,10 @@
     "average_speed": 2.013,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1743980394,
@@ -2355,7 +2689,10 @@
     "average_speed": 2.337,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1743940137,
@@ -2373,7 +2710,10 @@
     "average_speed": 2.295,
     "elevation_gain": 42,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1743820583,
@@ -2391,7 +2731,10 @@
     "average_speed": 0.692,
     "elevation_gain": 936,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1743597591,
@@ -2409,7 +2752,10 @@
     "average_speed": 2.154,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1743430488,
@@ -2427,7 +2773,8 @@
     "average_speed": 0.0,
     "elevation_gain": 56,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1743242284,
@@ -2445,7 +2792,10 @@
     "average_speed": 1.092,
     "elevation_gain": 40,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1743213042,
@@ -2463,7 +2813,10 @@
     "average_speed": 0.874,
     "elevation_gain": 1896,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1742687281,
@@ -2481,7 +2834,10 @@
     "average_speed": 2.295,
     "elevation_gain": 55,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1741995025,
@@ -2499,7 +2855,10 @@
     "average_speed": 0.922,
     "elevation_gain": 1525,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1741012407,
@@ -2517,7 +2876,8 @@
     "average_speed": 0.0,
     "elevation_gain": 55,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1740917843,
@@ -2535,7 +2895,10 @@
     "average_speed": 2.126,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   },
   {
     "run_id": 1739106294,
@@ -2553,7 +2916,8 @@
     "average_speed": 0.0,
     "elevation_gain": 17,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": []
   },
   {
     "run_id": 1737636738,
@@ -2571,6 +2935,9 @@
     "average_speed": 1.955,
     "elevation_gain": 0,
     "source": "COROS",
-    "streak": 1
+    "streak": 1,
+    "country_codes": [
+      "CN"
+    ]
   }
 ]

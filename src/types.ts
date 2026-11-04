@@ -7,6 +7,7 @@ export interface Activity {
   start_date: string
   start_date_local: string
   location_country: string | null
+  country_codes?: string[] // Countries visited by this GPS track (ISO alpha-2)
   summary_polyline: string | null
   average_heartrate: number | null
   average_speed: number // m/s

@@ -207,3 +207,11 @@ src/
 ## License
 
 MIT 
+
+## 国家统计
+
+每条活动的 `country_codes` 依据完整 GPS 轨迹与离线 Natural Earth 国界计算。跨国路线统计所有经过的国家；无 GPS 时只采用明确的国家或中国城市信息，不根据“徒步”“跑步”等通用名称推断国家。国家按主权国家去重，香港等地区计入所属国家；省级地区统计继续保留香港。
+
+每日 COROS 同步会重新补齐地理字段。无需额外地图 API 请求。安装 `requirements-coros.txt` 后，可用 `python run_page/coros_geography.py` 对现有 JSON 补齐国家信息。
+
+国界数据及来源校验信息位于 `run_page/geography/`，来源为 [Natural Earth Admin 0 Countries](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/)，属于公共领域；仅供运动足迹统计使用。
